@@ -18,7 +18,7 @@ steps:
 - script:
     npm install
     npm audit fix
-    ng build --configuration production --output-hashing all
+    ng build
   displayName: 'Build angular app'
 - task: PublishBuildArtifacts@1
   inputs:
