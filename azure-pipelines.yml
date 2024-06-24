@@ -13,7 +13,6 @@ pool:
 variables:
   buildConfiguration: 'production'
   system.debug: 'true'
-  DISABLE_RESOURCE_UTILIZATION_WARNINGS: 'true'
 
 steps:
 - script: |
@@ -28,5 +27,4 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)/dist'
     ArtifactName: 'angular-app'
-    publishLocation: 'Container'
   displayName: 'Publist Build Artifacts'
