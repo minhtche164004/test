@@ -19,6 +19,10 @@ steps:
     npm install
     npm run build-prod
   displayName: 'Build angular app'
+- task: CopyFiles@2
+  inputs:
+    contents: '_buildOutput/**'
+    targetFolder: $(Build.SourcesDirectory)
 - task: PublishBuildArtifacts@1
   inputs:
     targetPath: '$(Build.SourcesDirectory)/dist'
