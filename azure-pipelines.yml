@@ -26,7 +26,7 @@ steps:
     targetFolder: $(Build.SourcesDirectory)/dist
 - task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Build.SourcesDirectory)/dist'
+    targetPath: '$(Build.ArtifactStagingDirectory)/dist'
     ArtifactName: 'angular-app'
     publishLocation: 'Container'
   displayName: 'Publist Build Artifacts'
