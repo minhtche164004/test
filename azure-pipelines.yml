@@ -17,8 +17,7 @@ steps:
 - script:
     npm install
     ng build
-    ng build
-    npm build
+    ng build --configuration=production
   displayName: 'Build angular app'
 - task: PublishBuildArtifacts@1
   inputs:
