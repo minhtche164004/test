@@ -23,4 +23,5 @@ steps:
   inputs:
     targetPath: '$(Build.SourcesDirectory)/dist'
     ArtifactName: 'angular-app'
+    publishLocation: 'Container'
   displayName: 'Publist Build Artifacts'
