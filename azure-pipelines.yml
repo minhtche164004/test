@@ -15,7 +15,7 @@ variables:
   system.debug: 'true'
 
 steps:
-- script: |
+- script:
     npm install
     npm run build-prod
   displayName: 'Build angular app'
