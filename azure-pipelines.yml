@@ -23,7 +23,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     contents: '**'
-    targetFolder: $(Build.SourcesDirectory)/dist
+    targetFolder: $(Build.ArtifactStagingDirectory)/dist
 - task: PublishBuildArtifacts@1
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)/dist'
