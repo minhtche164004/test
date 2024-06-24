@@ -22,7 +22,7 @@ steps:
   displayName: 'Build angular app'
 - task: CopyFiles@2
   inputs:
-    contents: '**'
+    contents: 'dist/**'
     targetFolder: $(Build.ArtifactStagingDirectory)/dist
 - task: PublishBuildArtifacts@1
   inputs:
