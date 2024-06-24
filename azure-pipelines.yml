@@ -11,6 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
+  buildConfiguration: 'production'
   system.debug: 'true'
 
 steps:
