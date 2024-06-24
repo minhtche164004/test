@@ -16,7 +16,7 @@ variables:
 
 steps:
 - script:
-    npm install -g @angular/CLI
+    npm install -g @angular/cli
     npm i --save-dev @angular/compiler-cli
     npm install
     ng build
