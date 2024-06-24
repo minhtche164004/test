@@ -13,6 +13,7 @@ pool:
 variables:
   buildConfiguration: 'production'
   system.debug: 'true'
+  DISABLE_RESOURCE_UTILIZATION_WARNINGS: 'true'
 
 steps:
 - script: |
