@@ -17,9 +17,7 @@ variables:
 steps:
 - script:
     npm install -g @angular/cli
-    npm i --save-dev @angular/compiler-cli
     npm install
-    ng build
     ng build --configuration=production
     npm run build --prod
   displayName: 'Build angular app'
