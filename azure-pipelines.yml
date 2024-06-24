@@ -11,17 +11,15 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  buildConfiguration: 'production'
   system.debug: 'true'
 
 steps:
 - script:
     npm install
-    npm audit fix
     ng build
   displayName: 'Build angular app'
 - task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Build.SourcesDirectory)'
+    targetPath: '$(Build.SourcesDirectory)/dist'
     ArtifactName: 'angular-app'
   displayName: 'Publist Build Artifacts'
